@@ -5,19 +5,18 @@ body {
     background-color: hsla(165, 81%, 93%, 0.5);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: ;: top, center;
+    background-position: top, center;
     background-size: 100%;
     background-blend-mode: color;
     color: rgba(0,0,0,1);
-    color: whitesmoke;
     color: black;
 }
 
 div#interface {
     width: 900px;
     background-color: rgba(200,200,200,.5);
-    margin: -20px auto 0px auto;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+    margin: -20px auto 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
     padding: 30px;
 }
 
@@ -35,7 +34,7 @@ header#cabecalho img#icone {
 header#cabecalho {
     border-bottom: 1px #606060 dotted;
     height: 150px;
-    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0 90px;
     border-radius: 25px 5px 25px 5px;
 }
 
@@ -44,16 +43,16 @@ header#cabecalho h1 {
     font-size: 22pt;
     color: #282828;
     text-shadow: 1px 1px 1px rgba(0,0,0,.7);
-    padding: 0px;
-    margin-bottom: 0px;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 header#cabecalho h2 {
     font-family: Arial, sans-serif;
     color: #dedddd;
     font-size: 17pt;
-    padding: 0px;
-    margin-top: 0px;
+    padding: 0;
+    margin-top: 0;
 }
 
 /* Formatação de imagens com legendas */
@@ -72,7 +71,7 @@ width: 100%;
 figure.foto-legenda figcaption {
     opacity: 0;
     position: absolute;
-    top: 0px;
+    top: 0;
     background-color: rgba(0,0,0,.4);
     color: white;
     width: 100%;
