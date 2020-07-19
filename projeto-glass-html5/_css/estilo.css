@@ -152,6 +152,31 @@ table#tabelaspec td {
     text-align: right;
 }
 
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color: #9c9c9c;
+}
+
+table#tabelaspec caption {
+    color: #3e3e3e;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #1a1a1a;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
 aside#lateral {
     display: block;
     width: 350px;
