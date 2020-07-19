@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste JavaScript 03</title>
+    <script>
+        var quebrada = false;
+        function mudaLampada(tipo) {
+
+            if(!quebrada) {
+                document.getElementById("luz").src = "../projeto-glass-html5/_imagens/" + tipo + ".jpg";
+                if (tipo == 'lampada-quebrada') {
+                    quebrada = true;
+                }
+            }
+        }
+
+    </script>
+
+    <style>
+        h1 {
+            font-family: "Agency FB";
+            color: darkorange
+        }
+    </style>
+</head>
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="../projeto-glass-html5/_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/>
+</body>
+</html>
