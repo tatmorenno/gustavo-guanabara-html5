@@ -58,7 +58,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 650px;
 }
 
 nav#menu li {
@@ -70,7 +70,22 @@ nav#menu li {
     transition: 2s;
 }
 
+nav#menu li:hover {
+    background-color: gray;
+    color: gray;
+    transition: 1s;
+}
+
 nav#menu h1 {
     display: none;
+}
+
+nav#menu a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
 
 }
