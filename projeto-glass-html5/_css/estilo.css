@@ -12,9 +12,28 @@ body {
     color: whitesmoke;
     color: black;
 }
+
+div#interface {
+    width: 900px;
+    background-color: rgba(200,200,200,.5);
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+    padding: 30px;
+}
+
 p {
     text-align: justify;
     text-indent: 50px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 980px;
+    top: 60px;
+}
+
+header#cabecalho {
+    
 }
 
 /* Formatação de imagens com legendas */
@@ -58,7 +77,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 650px;
+    left: 500px;
 }
 
 nav#menu li {
