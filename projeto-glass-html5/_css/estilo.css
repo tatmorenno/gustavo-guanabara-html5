@@ -20,7 +20,7 @@ body {
 
 div#interface {
     width: 900px;
-    background-color: rgba(200,200,200,.5);
+    background-color: #ffffff;
     margin: -20px auto 0 auto;
     box-shadow: 0 0 10px rgba(0,0,0,.6);
     padding: 30px;
@@ -64,7 +64,7 @@ header#cabecalho h1 {
 
 header#cabecalho h2 {
     font-family: 'Titillium Web', sans-serif;
-    color: #dedddd;
+    color: #afaeae;
     font-size: 16pt;
     padding: 0;
     margin-top: 0;
@@ -79,7 +79,7 @@ figure.foto-legenda {
 }
 
 figure.foto-legenda img {
-width: 100%;
+    width: 100%;
     height: 100%;
 }
 
@@ -87,7 +87,7 @@ figure.foto-legenda figcaption {
     opacity: 0;
     position: absolute;
     top: 0;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.6);
     color: white;
     width: 100%;
     height: 100%;
