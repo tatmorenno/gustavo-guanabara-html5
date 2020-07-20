@@ -247,6 +247,7 @@ background-color: #606060;
 footer#rodape {
     clear: both;
     border-top: 1px dotted #8d8c8c;
+    border-radius: 25px 25px 0 0;
 }
 
 footer#rodape p {
