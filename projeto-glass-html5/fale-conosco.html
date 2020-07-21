@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tudo sobre Google Glass</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
-
+    <link rel="stylesheet" type="text/css" href="_css/form.css"/>
 </head>
-<script language="JavaScript" src="_javascript/funcoes.js"></script>
+<script src="_javascript/funcoes.js"></script>
 <body>
 <div id="interface">
     <header id="cabecalho">
@@ -17,8 +17,7 @@
             <h2>A revolução do Google está chegando</h2>
         </hgroup>
 
-        <img id="icone" src="_imagens/glass-oculos-preto-peq.png" alt="Icone do Google Glass"/>
-
+        <img id="icone" src="_imagens/contato.png" alt="Icone do Contato"/>
         <nav id="menu">
             <h1>Menu Principal</h1>
             <ul type="disc">
@@ -31,38 +30,53 @@
         </nav>
     </header>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+    <section id="corpo-full">
+        <article id="noticia-principal">
+            <header id="cabecalho-artigo">
+                <hgroup>
+                    <h3>Fale Conosco > Contato</h3>
+                    <h1>Formulário de Contato</h1>
+                    <h2>por Gustavo Guanabara</h2>
+                    <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+            <form>
+                <fieldset>
+                    <legend id="usuario">Identificação do Usuário</legend>
+                    <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo" /></p>
+                    <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos" </p>
+                    <p><label for="cMail">E-mail:</label><input type="email" name="tMail" id="cMail" size="20" maxlength="40" </p>
+                    <fieldset id="sexo"><legend>Sexo:</legend>
+                        <input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label></input>
+                        <br/>
+                        <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label></input>
+                    </fieldset>
+                    <p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc"></p>
+                </fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+                <fieldset>
+                    <legend id="endereco">Endereço do Usuário</legend>
+                    <p><label>Logradouro:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."/></p>
+                    <p>Número:<input type="number" id="cNum" min="0" max="99999"/> </p>
+                    <p>Estado:</p>
+                    <p>Cidade:</p>
+                </fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+                <fieldset>
+                    <legend id="mensagem">Mensagem do Usuário</legend>
+                    Grau de Urgência:
+                    Mensagem:</fieldset>
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+                <fieldset>
+                    <legend id="pedido">Quero um Google Glass</legend>
+                    Gostaria de adquirir um Google Glass quando disponível
+                    Cor:
+                    Quantidade:
+                    Preço Total: R$</fieldset>
 
-
-[BOTÃO ENVIAR]
+                [BOTÃO ENVIAR]
+            </form>
 
 <footer id="rodape">
 
