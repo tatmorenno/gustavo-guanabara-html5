@@ -9,6 +9,13 @@
     <link rel="stylesheet" type="text/css" href="_css/form.css"/>
 </head>
 <script src="_javascript/funcoes.js"></script>
+<script>
+    function calc_total() {
+        var qtd = parseInt(document.getElementById('cQtd').value);
+            tot = qtd * 1500;
+            document.getElementById('cTot').value = tot;
+    }
+</script>
 <body>
 <div id="interface">
     <header id="cabecalho">
@@ -41,9 +48,9 @@
                 </hgroup>
             </header>
 
-            <form method="post" id="fContato" action="mailto:tatiana.emilia.morenno@gmail.com">
-                <fieldset>
-                    <legend id="usuario">Identificação do Usuário</legend>
+            <form method="post" id="fContato" action="mailto:tatiana.emilia.morenno@gmail.com" oninput="calc_total();">
+                <fieldset id="usuario">
+                    <legend>Identificação do Usuário</legend>
                     <p><label for="cNome">Nome:</label>
                         <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/>
                     </p>
@@ -63,8 +70,8 @@
                         <input type="date" name="tNasc" id="cNasc"></p>
                 </fieldset>
 
-                <fieldset>
-                    <legend id="endereco">Endereço do Usuário</legend>
+                <fieldset id="endereco">
+                    <legend>Endereço do Usuário</legend>
                     <p><label for="cRua">Logradouro:</label>
                         <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."/></p>
                     <p><label for="cNum">Número:</label>
@@ -106,24 +113,31 @@
                     </datalist>
                 </fieldset>
 
-                <fieldset>
-                    <legend id="mensagem">Mensagem do Usuário</legend>
-                    <p><label for="cUrg">Grau de Urgência: </label>Mín
-                    <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
+                <fieldset id="mensagem">
+                    <legend>Mensagem do Usuário</legend>
+                    <p><label for="cUrg">Grau de Urgência: </label>
+                        Mín <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
                     <p><label for="cMsg">Mensagem: </label>
-                    <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui a sua mensagem"></textarea>
+                    <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui a sua mensagem"></textarea>
                     </p>
                 </fieldset>
 
-                <fieldset>
-                    <legend id="pedido">Quero um Google Glass</legend>
-                    <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
-                    <p><label for="cCor">Cor:</label></p>
-                    <p><label for="cQtd">Quantidade:</label></p>
-                    <p><label for="cTot">Preço Total: R$</label></p>
+                <fieldset id="pedido">
+                    <legend>Quero um Google Glass</legend>
+                    <p><input type="checkbox" name="tPed" id="cPed" checked>
+                        <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                    <p><label for="cCor">Cor:</label>
+                    <input type="color" name="cCor" id="cCor" value="#0000FF">
+                    </p>
+                    <p><label for="cQtd">Quantidade:</label>
+                    <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0">
+                    </p>
+                    <p><label for="cTot">Preço Total: R$</label>
+                    <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly>
+                    </p>
                 </fieldset>
 
-                [BOTÃO ENVIAR]
+                <input type="image" id="cEnviar" name="tEnviar" src="_imagens/botao-enviar.png">
             </form>
 
 <footer id="rodape">
